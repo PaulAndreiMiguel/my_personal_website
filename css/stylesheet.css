@@ -1,5 +1,5 @@
 h1, h2, h3, h4 {
-    color:gray;
+    color:black;
 }
 nav {
     background-color: aqua;
@@ -7,15 +7,27 @@ nav {
 
 }
 p {
-    color:gray;
+    color:black;
 }
-li {
-    color:gray;
+
+.headings {
+    color:black;
     list-style: none;
+    display: flex ;
 }
 body {
-    background-color:black;
+    background-color:beige;
+    display: grid;
+    flex-wrap: wrap;
+    
+    
 }
-.heading {
+header{
     font-family: 'Montserrat', sans-serif;
+    background-color: aqua;
+    text-align: center;
+    flex: 1 0 100%;
+}
+.welcome{
+    font-size:x-large;
 }

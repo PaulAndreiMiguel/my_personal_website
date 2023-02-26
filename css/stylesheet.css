@@ -1,33 +1,32 @@
-h1, h2, h3, h4 {
-    color:black;
-}
-nav {
-    background-color: aqua;
-    text-align: center;
 
-}
-p {
-    color:black;
-}
-
-.headings {
-    color:black;
-    list-style: none;
-    display: flex ;
-}
 body {
     background-color:beige;
+    
+   
+}   
+.container{
     display: grid;
-    flex-wrap: wrap;
-    
-    
+    grid-template-columns:2fr 1fr;
+    grid-template-rows: 50% 20% 20%;
+   
+   
 }
 header{
     font-family: 'Montserrat', sans-serif;
     background-color: aqua;
     text-align: center;
-    flex: 1 0 100%;
+    gap: 20px;
+    grid-column: 1/13;
+ 
 }
-.welcome{
-    font-size:x-large;
+
+footer{
+    background-color: aqua;
+    text-align: center;
+    grid-column: 1/13;
+    
+}
+.headings{
+    display: inline-block;
+    list-style: none;
 }

@@ -16,14 +16,13 @@ header{
     background-color: aqua;
     text-align: center;
     gap: 20px;
-    grid-column: 1/13;
  
 }
 
 footer{
     background-color: aqua;
     text-align: center;
-    grid-column: 1/13;
+    
     
 }
 .headings{

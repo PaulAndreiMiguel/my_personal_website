@@ -1,31 +1,21 @@
 
 body {
-    background-color:beige;
-    
-   
+    background-color:beige; 
 }   
 .container{
     display: grid;
-    grid-template-columns:2fr 1fr;
-    grid-template-rows: 50% 20% 20%;
-   
-   
+    grid-template-columns:2fr 1fr;  
 }
-header{
-    font-family: 'Montserrat', sans-serif;
+header, footer {
     background-color: aqua;
     text-align: center;
     gap: 20px;
  
 }
-
-footer{
-    background-color: aqua;
-    text-align: center;
-    
-    
-}
 .headings{
     display: inline-block;
     list-style: none;
+}
+.head{
+    font-family: 'Montserrat', sans-serif;
 }

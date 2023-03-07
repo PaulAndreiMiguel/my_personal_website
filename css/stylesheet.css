@@ -6,55 +6,124 @@ body {
     display: grid;
     grid-template-columns:2fr 1fr;  
 }
-header, footer {
+header {
     background-color: aqua;
     text-align: center;
-    gap: 20px;
+  
+}
 
+footer{
+    background-color: aqua;
+    text-align: center;
+
+}
+
+div{
+    padding: 10px;
+}
+
+.div1{
+    border-bottom: solid black ;
+}
+
+.div2{
+    border-bottom: solid black ;
 }
 
 .head{
     font-family: 'Montserrat', sans-serif;
 }
 
+nav{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column; 
+}
+
+.item2, .item4, .item6{
+    padding-left: 10px;
+}
+ 
+
 @media screen and (min-width:600px) {
     
-    main{
-        display: flex;
+    
+
+    .div1{
         display: grid;
-        grid-template-columns: 1fr 2fr;
-    }  
-    
-}
-
-.nav-list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
-    justify-content: center;
-}
-
-.nav-list li {
-    list-style-type: none;
-}
-
-.nav-list a {
-    
-    text-decoration: none;
-    padding: 10px;
-}
-
-
-@media (max-width: 600px) {
-    .nav-list {
-        flex-direction: column;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
-}  
-main hr{
-    border-bottom: solid black 1px;
-}
-p{
-    padding: 0px;
+
+    .div2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .div3{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+
+    .item2{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .item3{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .item5{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .item7{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
     
-}
+    .item4{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .item6{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        justify-content: center;
+    }
+
+    a{
+        padding: 10px;
+    }
+} 
+
+
+
+
+
+
+
